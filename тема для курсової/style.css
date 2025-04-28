@@ -1,6 +1,16 @@
 body{
+    display: flex; /* Використовуємо Flexbox для розташування елементів */
+    flex-direction: column; /* Вертикальне розташування елементів */
     background-image: url(pngtree-cute-dog-tiling-background-silhouette-small-animal-image_595773.jpg);
 }
+
+/* Основні стилі для тіла */
+html, body {
+    height: 100%; /* Встановлюємо висоту на 100%, щоб адаптувати сторінку до висоти екрану */
+    margin: 0; /* Видаляємо відступи по замовчуванню */
+    font-family: Arial, sans-serif; /* Встановлюємо шрифт Arial для всіх елементів */
+}
+
 h1{
     color:orangered;
 }
@@ -14,8 +24,8 @@ h1{
 header{
    background-color: blue; 
    /* width: 1600px; */
-   height: 50px;
    text-align: center;
+   margin: 20px;
 }
 .carousel-container {
     position: relative; /* дозволяє позиціонувати всередині себе абсолютно позиціоновані елементи (кнопки) */
@@ -42,6 +52,7 @@ header{
     box-sizing: border-box; /* padding і border враховуються у ширині елемента */
     padding: 20px; /* внутрішні відступи всередині картки */
     border: none; /* забираємо рамку по замовчуванню з style_site.css */
+    text-align: center;
 }
 
 .carousel-container .nav {
@@ -67,4 +78,27 @@ header{
 
 .carousel-container .next {
     right: 10px; /* розміщує кнопку "→" справа, на 10px від краю контейнера */
+}
+
+.card img{
+    height: 400px;
+}
+
+
+/* Стилі для секції контактів */
+#contacts {
+    background-color: wheat; /* Колір фону для секції контактів */
+    border-radius: 20px 20px 0 0; /* Заокруглені верхні кути */
+    border: 5px solid #333; /* Обведення для секції */
+    margin-top: 20px;
+}
+
+
+footer {
+    background-color: #333; /* Колір фону футера */
+    color: darkgoldenrod; /* Колір тексту футера */
+    text-align: center; /* Центруємо текст */
+    padding: 10px 0; /* Відступи для футера */
+    margin-top: auto; /* Позиціюємо футер внизу сторінки */
+    font-weight: bold; /* Жирний текст */
 }
